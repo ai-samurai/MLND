@@ -495,7 +495,7 @@ PTRATIO: Increase in this will lead to DECREASE in 'MEDV'<br></p>
 A R^2 score of 0.923 suggests that the model captures 92.3% of the variation of the target variable.<br><br>
 We may say that the model successfully captures the variance but with skepticism, since we do not have more information about the model. Depending upon the application for which this model was built, we could make a better judgement on whether the model "successfully" captured the variation of the target variable. <br><br>
 For example-<br>
-If the model was perdicting a target variable in a tightly controlled laboratory experiment, like stress and strain limits for alloys, this may not be considered a successful capturing of variance. <br>
+If the model was perdicting a target variable in a tightly controlled laboratory experiment, like gas phase spectroscopy, this may not be considered a successful capturing of variance. <br>
 On the other hand if it was predicting some form of human behaviour, like click-through-rates, this may be considered a successful capturing of variance.</p>
 
 </div>
@@ -572,7 +572,7 @@ On the other hand if it was predicting some form of human behaviour, like click-
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong><br>
-It also serves as a check on overfitting i.e. by using all our data on training, we might get an algorithm that works very well on our data but may not work well as a general model (new data). Splitting the data prevents this and allows us to estimate the performance of our algorithm on an independent dataset.<br></p>
+It serves as a check on overfitting. By using all our data on training, we might get an algorithm that works very well on our data but may not work well as a general model (new data). Splitting the data reduces the possibility of overfitting and allows us to estimate the performance of our algorithm on an independent dataset.<br></p>
 
 </div>
 </div>
@@ -1688,8 +1688,8 @@ HmyZmZmZmZk1gAdbZmZmZmZmDfD/m0BhPDIDrnoAAAAASUVORK5CYII=
 <p><strong>Answer: </strong><br><br>
 Graph 1 (max_depth = 1) :</p>
 <ul>
-<li>As more training points are added the score of the training curve drops initially and then stabalizes at a low value.</li>
-<li>The testing curve score increases initially and then stabalizes at a low value.</li>
+<li>As more training points are added the score of the training curve drops initially and then stabalizes close to a low value.</li>
+<li>The testing curve score increases initially and then stabalizes close to a low value.</li>
 <li>Having more datapoints will not help as this is a case of high bias.</li>
 </ul>
 <p>The scores for the training and testing sets are converging to a low score as more data points are added, this is because it is a case of high bias, i.e. the complexity of the model is too low for it to capture the relationships effectively, even in the training dataset.</p>
@@ -2251,7 +2251,7 @@ In my opinion a max_depth=4 (or even 3) will best generalize to unseen data. Fro
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-Grid search technique is used to test multiple parameter tunes, using cross-validation, to test which parameter tune gives the best performance. It can be used to identify optimal parameter settings for a learning algorithm used to construct a model.</p>
+Grid search technique is used to test multiple parameter tunes, using cross-validation, to test which parameter tune gives the best performance. It can be used to identify <strong>optimal parameter settings</strong> for a learning algorithm used to construct a model.</p>
 
 </div>
 </div>
@@ -2274,7 +2274,7 @@ Grid search technique is used to test multiple parameter tunes, using cross-vali
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong><br>
 The K-fold cross-validation technique splits data into k-consecutive folds and conducts cross-validation tests on each fold. So if you had a dataset and wanted to conduct a K-fold cross-validation, you could split data into <strong>k</strong> equal folds, each iteration would have one fold as the test set and the remaining <strong>k-1</strong> folds as the training set. Every iteration would have a different test and train set.<br>
-This technique greatly improves the accuracy of our assessment of how good the learning algorithm is. Since we determine which parameter tuning to use by looking at how good our algorithm is, improving our assessment accuracy, by implementing K-fold, will greatly improve our ability to choose the best parameter tuning.</p>
+This technique greatly improves the accuracy of our assessment of how good the learning algorithm is. Since we determine which parameter tuning to use by looking at how good our algorithm is. Improving our assessment accuracy, by implementing K-fold, will greatly improve our ability to choose the best parameter tuning.</p>
 
 </div>
 </div>

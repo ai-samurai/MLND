@@ -79,10 +79,10 @@ def evaluate(results, accuracy, f1):
                 ax[j/3, j%3].set_xlim((-0.1, 3.0))
     
     # Add unique y-labels
-    ax[0, 0].set_ylabel("Time (in seconds)")
+    ax[0, 0].set_ylabel("Time (in milliseconds)")
     ax[0, 1].set_ylabel("Accuracy Score")
     ax[0, 2].set_ylabel("F-score")
-    ax[1, 0].set_ylabel("Time (in seconds)")
+    ax[1, 0].set_ylabel("Time (in milliseconds)")
     ax[1, 1].set_ylabel("Accuracy Score")
     ax[1, 2].set_ylabel("F-score")
     
